@@ -5,11 +5,9 @@ import Footer from "./Footer";
 
 const Root = () => {
     const location = useLocation()
-    
-
 
     return (
-        <div>
+        <div className="flex flex-col  min-h-screen">
             <Header></Header>
             {location.pathname === "/" ? <Home></Home> : <Outlet></Outlet> } 
             <Footer></Footer>

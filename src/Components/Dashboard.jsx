@@ -1,7 +1,10 @@
 
 const Dashboard = () => {
+
+
+
     return (
-        <div>
+        <div className="flex-grow">
             dashboard
         </div>
     );
