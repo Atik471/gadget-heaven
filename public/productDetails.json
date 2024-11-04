@@ -1,0 +1,168 @@
+[
+      {
+        "category_name": "Laptops",
+        "products": [
+          {
+            "product_id": 1,
+            "product_title": "Laptop A",
+            "product_image": "https://example.com/images/laptop_a.jpg",
+            "category": "Laptops",
+            "price": 750,
+            "description": "A powerful laptop with advanced features.",
+            "specifications": [
+              "16GB RAM",
+              "512GB SSD",
+              "Intel i7 Processor"
+            ],
+            "availability": true,
+            "rating": 4.5
+          },
+          {
+            "product_id": 2,
+            "product_title": "Laptop B",
+            "product_image": "https://example.com/images/laptop_b.jpg",
+            "category": "Laptops",
+            "price": 950,
+            "description": "Lightweight and portable with great battery life.",
+            "specifications": [
+              "8GB RAM",
+              "256GB SSD",
+              "Intel i5 Processor"
+            ],
+            "availability": true,
+            "rating": 4.2
+          },
+          {
+            "product_id": 3,
+            "product_title": "Laptop C",
+            "product_image": "https://example.com/images/laptop_c.jpg",
+            "category": "Laptops",
+            "price": 1200,
+            "description": "Premium laptop with stunning display and performance.",
+            "specifications": [
+              "32GB RAM",
+              "1TB SSD",
+              "Intel i9 Processor"
+            ],
+            "availability": true,
+            "rating": 4.8
+          },
+          {
+            "product_id": 4,
+            "product_title": "Laptop D",
+            "product_image": "https://example.com/images/laptop_d.jpg",
+            "category": "Laptops",
+            "price": 850,
+            "description": "A versatile laptop for work and play.",
+            "specifications": [
+              "16GB RAM",
+              "512GB SSD",
+              "AMD Ryzen 7"
+            ],
+            "availability": true,
+            "rating": 4.4
+          },
+          {
+            "product_id": 5,
+            "product_title": "Laptop E",
+            "product_image": "https://example.com/images/laptop_e.jpg",
+            "category": "Laptops",
+            "price": 650,
+            "description": "Affordable laptop for everyday tasks.",
+            "specifications": [
+              "8GB RAM",
+              "1TB HDD",
+              "Intel i3 Processor"
+            ],
+            "availability": true,
+            "rating": 4.1
+          },
+          {
+            "product_id": 6,
+            "product_title": "Laptop F",
+            "product_image": "https://example.com/images/laptop_f.jpg",
+            "category": "Laptops",
+            "price": 1100,
+            "description": "Gaming laptop with high-performance graphics.",
+            "specifications": [
+              "16GB RAM",
+              "512GB SSD",
+              "NVIDIA GeForce RTX 3060"
+            ],
+            "availability": false,
+            "rating": 4.7
+          }
+        ]
+      },
+      {
+        "category_name": "Smartphones",
+        "products": [
+          {
+            "product_id": 7,
+            "product_title": "Smartphone A",
+            "product_image": "https://example.com/images/smartphone_a.jpg",
+            "category": "Smartphones",
+            "price": 600,
+            "description": "Flagship smartphone with amazing camera quality.",
+            "specifications": [
+              "128GB Storage",
+              "8GB RAM",
+              "Triple Camera"
+            ],
+            "availability": true,
+            "rating": 4.6
+          },
+          {
+            "product_id": 8,
+            "product_title": "Smartphone B",
+            "product_image": "https://example.com/images/smartphone_b.jpg",
+            "category": "Smartphones",
+            "price": 450,
+            "description": "Mid-range smartphone with solid performance.",
+            "specifications": [
+              "64GB Storage",
+              "4GB RAM",
+              "Dual Camera"
+            ],
+            "availability": true,
+            "rating": 4.3
+          }
+        ]
+      },
+      {
+        "category_name": "Tablets",
+        "products": [
+          {
+            "product_id": 9,
+            "product_title": "Tablet A",
+            "product_image": "https://example.com/images/tablet_a.jpg",
+            "category": "Tablets",
+            "price": 300,
+            "description": "Lightweight tablet perfect for reading and browsing.",
+            "specifications": [
+              "32GB Storage",
+              "3GB RAM",
+              "10-inch Display"
+            ],
+            "availability": true,
+            "rating": 4.2
+          },
+          {
+            "product_id": 10,
+            "product_title": "Tablet B",
+            "product_image": "https://example.com/images/tablet_b.jpg",
+            "category": "Tablets",
+            "price": 400,
+            "description": "High-performance tablet for productivity.",
+            "specifications": [
+              "64GB Storage",
+              "4GB RAM",
+              "12-inch Display"
+            ],
+            "availability": true,
+            "rating": 4.5
+          }
+        ]
+      }
+]
+  
