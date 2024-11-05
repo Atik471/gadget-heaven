@@ -7,7 +7,7 @@ const Root = () => {
     const location = useLocation()
 
     return (
-        <div className="flex flex-col  min-h-screen">
+        <div className="flex flex-col min-h-screen font-sora bg-root">
             <Header></Header>
             {location.pathname === "/" ? <Home></Home> : <Outlet></Outlet> } 
             <Footer></Footer>

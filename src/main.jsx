@@ -6,6 +6,7 @@ import Root from './Components/Root';
 import ErrorPage from './Components/ErrorPage';
 import Statistics from './Components/Statistics'
 import Dashboard from './Components/Dashboard';
+import Home from './Components/Home';
 
 const router = createBrowserRouter([
   {
@@ -14,13 +15,17 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
+        path: "/:props?",
+        element: <Home></Home>
+      },
+      {
         path: "/statistics",
         element: <Statistics></Statistics>
       },
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>
-      }
+      },
     ],
   },
 ]);

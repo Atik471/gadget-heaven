@@ -6,7 +6,7 @@ import "./Navbar.css"
 
 const Navbar = () => {
     return (
-        <div className="font-sora">
+        <div>
             <div className="flex justify-between items-center max-w-[84%] py-6 mx-auto">
                 <Link to={"/"}><h1 className="font-bold text-2xl">Gadget Heaven</h1></Link>
                 

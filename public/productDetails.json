@@ -4,8 +4,8 @@
         "products": [
           {
             "product_id": 1,
-            "product_title": "Laptop A",
-            "product_image": "https://example.com/images/laptop_a.jpg",
+            "product_title": "Dell XPS 13",
+            "product_image": "https://i.ibb.co.com/2h3N5rX/Dell-XPS-13.jpg",
             "category": "Laptops",
             "price": 750,
             "description": "A powerful laptop with advanced features.",
@@ -19,8 +19,8 @@
           },
           {
             "product_id": 2,
-            "product_title": "Laptop B",
-            "product_image": "https://example.com/images/laptop_b.jpg",
+            "product_title": "Apple MacBook Air (M1)",
+            "product_image": "https://i.ibb.co.com/6gnDYNj/Apple-Mac-Book-Air-M1.jpg",
             "category": "Laptops",
             "price": 950,
             "description": "Lightweight and portable with great battery life.",
@@ -34,8 +34,8 @@
           },
           {
             "product_id": 3,
-            "product_title": "Laptop C",
-            "product_image": "https://example.com/images/laptop_c.jpg",
+            "product_title": "HP Spectre x360",
+            "product_image": "https://i.ibb.co.com/09C4rpG/hp-spectre-x360.jpg",
             "category": "Laptops",
             "price": 1200,
             "description": "Premium laptop with stunning display and performance.",
@@ -49,8 +49,8 @@
           },
           {
             "product_id": 4,
-            "product_title": "Laptop D",
-            "product_image": "https://example.com/images/laptop_d.jpg",
+            "product_title": "Lenovo ThinkPad X1 Carbon",
+            "product_image": "https://i.ibb.co.com/cXCQmsM/Asus-Zen-Book-14.jpg",
             "category": "Laptops",
             "price": 850,
             "description": "A versatile laptop for work and play.",
@@ -64,8 +64,8 @@
           },
           {
             "product_id": 5,
-            "product_title": "Laptop E",
-            "product_image": "https://example.com/images/laptop_e.jpg",
+            "product_title": "Asus ZenBook 14",
+            "product_image": "https://i.ibb.co.com/Wgs4CgK/Surface-Laptop-4.jpg",
             "category": "Laptops",
             "price": 650,
             "description": "Affordable laptop for everyday tasks.",
@@ -79,8 +79,8 @@
           },
           {
             "product_id": 6,
-            "product_title": "Laptop F",
-            "product_image": "https://example.com/images/laptop_f.jpg",
+            "product_title": "Surface Laptop 4",
+            "product_image": "https://i.ibb.co.com/dPnrQML/Lenovo-Think-Pad-X1-Carbon.jpg",
             "category": "Laptops",
             "price": 1100,
             "description": "Gaming laptop with high-performance graphics.",
@@ -99,8 +99,8 @@
         "products": [
           {
             "product_id": 7,
-            "product_title": "Smartphone A",
-            "product_image": "https://example.com/images/smartphone_a.jpg",
+            "product_title": "iPhone 14",
+            "product_image": "https://i.ibb.co.com/HxHmMBG/i-Phone-14.jpg",
             "category": "Smartphones",
             "price": 600,
             "description": "Flagship smartphone with amazing camera quality.",
@@ -114,8 +114,8 @@
           },
           {
             "product_id": 8,
-            "product_title": "Smartphone B",
-            "product_image": "https://example.com/images/smartphone_b.jpg",
+            "product_title": "Galaxy S21",
+            "product_image": "https://i.ibb.co.com/kcZXLCJ/Samsung-Galaxy-S21.jpg",
             "category": "Smartphones",
             "price": 450,
             "description": "Mid-range smartphone with solid performance.",
@@ -134,8 +134,8 @@
         "products": [
           {
             "product_id": 9,
-            "product_title": "Tablet A",
-            "product_image": "https://example.com/images/tablet_a.jpg",
+            "product_title": "iPad Pro",
+            "product_image": "https://i.ibb.co.com/KhVnb9D/i-Pad-Pro-M4.jpg",
             "category": "Tablets",
             "price": 300,
             "description": "Lightweight tablet perfect for reading and browsing.",
@@ -149,8 +149,8 @@
           },
           {
             "product_id": 10,
-            "product_title": "Tablet B",
-            "product_image": "https://example.com/images/tablet_b.jpg",
+            "product_title": "Galaxy Tab S7",
+            "product_image": "https://i.ibb.co.com/Ybb6t6V/Galaxy-Tab-Shttps://i.ibb.co.com/09C4rpG/hp-spectre-x360.jpg7.jpg",
             "category": "Tablets",
             "price": 400,
             "description": "High-performance tablet for productivity.",

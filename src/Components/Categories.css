@@ -1,0 +1,14 @@
+ a.active.category{
+    background-color: #9538E2;
+    color: white;
+    transition: all;
+}
+a.category{
+    background-color: #09080F0D;
+    color: #09080F99;
+    padding: 1.2rem;
+    flex-grow: 1;
+    border-radius: 2rem;
+    font-weight: 600;
+    text-align: left;
+}
