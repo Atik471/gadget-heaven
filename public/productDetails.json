@@ -65,7 +65,7 @@
           {
             "product_id": 5,
             "product_title": "Asus ZenBook 14",
-            "product_image": "https://i.ibb.co.com/Wgs4CgK/Surface-Laptop-4.jpg",
+            "product_image": "https://i.ibb.co.com/YBnnLg0/asus-zenbook-14.jpg",
             "category": "Laptops",
             "price": 650,
             "description": "Affordable laptop for everyday tasks.",
@@ -80,7 +80,7 @@
           {
             "product_id": 6,
             "product_title": "Surface Laptop 4",
-            "product_image": "https://i.ibb.co.com/dPnrQML/Lenovo-Think-Pad-X1-Carbon.jpg",
+            "product_image": "https://i.ibb.co.com/p31NMzJ/surfacelaptop5.jpg",
             "category": "Laptops",
             "price": 1100,
             "description": "Gaming laptop with high-performance graphics.",
@@ -115,7 +115,7 @@
           {
             "product_id": 8,
             "product_title": "Galaxy S21",
-            "product_image": "https://i.ibb.co.com/kcZXLCJ/Samsung-Galaxy-S21.jpg",
+            "product_image": "https://i.ibb.co.com/3pyZR7Y/s21.jpg",
             "category": "Smartphones",
             "price": 450,
             "description": "Mid-range smartphone with solid performance.",

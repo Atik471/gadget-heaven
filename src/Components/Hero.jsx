@@ -1,4 +1,4 @@
-import { matchPath, useLocation } from "react-router-dom";
+import { matchPath, NavLink, useLocation } from "react-router-dom";
 
 const Hero = () => {
 
@@ -12,7 +12,12 @@ const Hero = () => {
         location.pathname
     );
 
-    if(location.pathname === '/' || isMatch) 
+    const isProductMatch = matchPath(
+        { path: '/productDetails/:props' },
+        location.pathname
+    );
+
+    if((location.pathname === '/' || isMatch) && location.pathname != '/dashboard' && location.pathname != '/statistics') 
     {
         heroContent = (
             <div className="text-center">
@@ -22,15 +27,15 @@ const Hero = () => {
             </div>
         )
     }
-    else if(location.pathname === '/dashboard') 
+    else if(location.pathname === '/dashboard' || location.pathname === '/dashboard/cart' ||location.pathname === '/dashboard/wishlist') 
     {
         heroContent = (
             <div className="text-center">
                 <h1 className="text-4xl font-bold mb-6">Dashboard</h1>
                 <p className="max-w-[70%] m-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                 <div className="flex">
-                    <button>Cart</button>
-                    <button>Wishlist</button>
+                    <NavLink to={"/dashboard/cart"}>Cart</NavLink>
+                    <NavLink to={"/dashboard/wishlist"}>Wishlist</NavLink>
                 </div>
             </div>
         )
@@ -44,7 +49,7 @@ const Hero = () => {
             </div>
         )
     }
-    else if(location.pathname === '/product') 
+    else if(isProductMatch) 
     {
         heroContent = (
             <div className="text-center">

@@ -12,7 +12,7 @@ export default {
       colors: {
         primary: "#9538E2",
         root: "#F7F7F7",
-      }
+      },
     },
   },
   plugins: [],

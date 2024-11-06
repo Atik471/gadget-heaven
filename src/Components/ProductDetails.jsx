@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import ProductRating from "./ProductRating";
+import CartContext from "../Contexts/CartContext";
 
 const ProductDetails = () => {
     const [details, setDetails] = useState()
     const id = useParams()
+    const { addToCart, addToWishlist } = useContext(CartContext)
     
     useEffect(() => {
         fetch(`/productId/product-${id.id[1]}.json`)
@@ -16,8 +19,13 @@ const ProductDetails = () => {
         return <p>Loading...</p>;
     }
 
-    console.log(details.product_id)
+    const handleCart = () => {
+        addToCart(details)
+    }
 
+    const handleWishlist = () => {
+        addToWishlist(details)
+    }
 
     return (
         <div className="flex">
@@ -32,7 +40,11 @@ const ProductDetails = () => {
                         <li key={index}>{element}</li>  
                     ))}
                 </ul>
-                
+                <ProductRating initialRating={details.rating}></ProductRating>
+                <div>
+                    <button onClick={handleCart}>Add to cart</button>
+                    <button onClick={handleWishlist}>wishlist</button>
+                </div>
             </div>
         </div>
     );

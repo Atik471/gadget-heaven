@@ -8,7 +8,8 @@ import Statistics from './Components/Statistics'
 import Dashboard from './Components/Dashboard';
 import Home from './Components/Home';
 import ProductDetails from './Components/ProductDetails';
-import axios from 'axios';
+import Cart from './Components/Cart';
+import Wishlist from './Components/Wishlist';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,21 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard",
-        element: <Dashboard></Dashboard>
+        element: <Dashboard></Dashboard>,
+        children: [
+          {
+            path: "/dashboard",
+            element: <Cart></Cart>,
+          },
+          {
+            path: "/dashboard/cart",
+            element: <Cart></Cart>,
+          },
+          {
+            path: "/dashboard/wishlist",
+            element: <Wishlist></Wishlist>,
+          }
+        ]
       },
       {
         path: "/productDetails/:id",
