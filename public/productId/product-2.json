@@ -1,0 +1,15 @@
+{
+    "product_id": 2,
+    "product_title": "Apple MacBook Air (M1)",
+    "product_image": "https://i.ibb.co.com/6gnDYNj/Apple-Mac-Book-Air-M1.jpg",
+    "category": "Laptops",
+    "price": 950,
+    "description": "Lightweight and portable with great battery life.",
+    "specifications": [
+      "8GB RAM",
+      "256GB SSD",
+      "Intel i5 Processor"
+    ],
+    "availability": true,
+    "rating": 4.2
+  }

@@ -12,8 +12,6 @@ const Categories = () => {
             .catch((error) => console.error("Error fetching data:", error));
     }, []);
 
-    console.log(categories)
-
     return (
         <div className="flex flex-col p-6 gap-6 rounded-xl bg-white">
             <NavLink to={"/"} className={"category"}>All Product</NavLink>

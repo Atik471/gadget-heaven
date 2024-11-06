@@ -1,0 +1,15 @@
+{
+    "product_id": 3,
+    "product_title": "HP Spectre x360",
+    "product_image": "https://i.ibb.co.com/09C4rpG/hp-spectre-x360.jpg",
+    "category": "Laptops",
+    "price": 1200,
+    "description": "Premium laptop with stunning display and performance.",
+    "specifications": [
+      "32GB RAM",
+      "1TB SSD",
+      "Intel i9 Processor"
+    ],
+    "availability": true,
+    "rating": 4.8
+  }

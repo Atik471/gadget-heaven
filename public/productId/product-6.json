@@ -1,0 +1,15 @@
+{
+    "product_id": 6,
+    "product_title": "Surface Laptop 4",
+    "product_image": "https://i.ibb.co.com/dPnrQML/Lenovo-Think-Pad-X1-Carbon.jpg",
+    "category": "Laptops",
+    "price": 1100,
+    "description": "Gaming laptop with high-performance graphics.",
+    "specifications": [
+      "16GB RAM",
+      "512GB SSD",
+      "NVIDIA GeForce RTX 3060"
+    ],
+    "availability": false,
+    "rating": 4.7
+  }

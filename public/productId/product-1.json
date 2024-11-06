@@ -1,0 +1,15 @@
+{
+    "product_id": 1,
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co.com/2h3N5rX/Dell-XPS-13.jpg",
+    "category": "Laptops",
+    "price": 750,
+    "description": "A powerful laptop with advanced features.",
+    "specifications": [
+      "16GB RAM",
+      "512GB SSD",
+      "Intel i7 Processor"
+    ],
+    "availability": true,
+    "rating": 4.5
+  }

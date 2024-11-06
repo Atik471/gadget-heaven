@@ -7,6 +7,8 @@ import ErrorPage from './Components/ErrorPage';
 import Statistics from './Components/Statistics'
 import Dashboard from './Components/Dashboard';
 import Home from './Components/Home';
+import ProductDetails from './Components/ProductDetails';
+import axios from 'axios';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,10 @@ const router = createBrowserRouter([
         path: "/dashboard",
         element: <Dashboard></Dashboard>
       },
+      {
+        path: "/productDetails/:id",
+        element: <ProductDetails></ProductDetails>
+      }
     ],
   },
 ]);

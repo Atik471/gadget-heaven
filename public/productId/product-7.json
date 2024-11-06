@@ -1,0 +1,15 @@
+{
+    "product_id": 7,
+    "product_title": "iPhone 14",
+    "product_image": "https://i.ibb.co.com/HxHmMBG/i-Phone-14.jpg",
+    "category": "Smartphones",
+    "price": 600,
+    "description": "Flagship smartphone with amazing camera quality.",
+    "specifications": [
+      "128GB Storage",
+      "8GB RAM",
+      "Triple Camera"
+    ],
+    "availability": true,
+    "rating": 4.6
+  }

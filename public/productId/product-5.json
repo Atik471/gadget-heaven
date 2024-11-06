@@ -1,0 +1,15 @@
+{
+    "product_id": 5,
+    "product_title": "Asus ZenBook 14",
+    "product_image": "https://i.ibb.co.com/Wgs4CgK/Surface-Laptop-4.jpg",
+    "category": "Laptops",
+    "price": 650,
+    "description": "Affordable laptop for everyday tasks.",
+    "specifications": [
+      "8GB RAM",
+      "1TB HDD",
+      "Intel i3 Processor"
+    ],
+    "availability": true,
+    "rating": 4.1
+  }

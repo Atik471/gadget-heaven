@@ -1,0 +1,15 @@
+{
+    "product_id": 8,
+    "product_title": "Galaxy S21",
+    "product_image": "https://i.ibb.co.com/kcZXLCJ/Samsung-Galaxy-S21.jpg",
+    "category": "Smartphones",
+    "price": 450,
+    "description": "Mid-range smartphone with solid performance.",
+    "specifications": [
+      "64GB Storage",
+      "4GB RAM",
+      "Dual Camera"
+    ],
+    "availability": true,
+    "rating": 4.3
+  }

@@ -1,0 +1,15 @@
+{
+    "product_id": 4,
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://i.ibb.co.com/cXCQmsM/Asus-Zen-Book-14.jpg",
+    "category": "Laptops",
+    "price": 850,
+    "description": "A versatile laptop for work and play.",
+    "specifications": [
+      "16GB RAM",
+      "512GB SSD",
+      "AMD Ryzen 7"
+    ],
+    "availability": true,
+    "rating": 4.4
+  }

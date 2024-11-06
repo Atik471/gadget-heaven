@@ -1,0 +1,15 @@
+{
+    "product_id": 10,
+    "product_title": "Galaxy Tab S7",
+    "product_image": "https://i.ibb.co.com/Ybb6t6V/Galaxy-Tab-Shttps://i.ibb.co.com/09C4rpG/hp-spectre-x360.jpg7.jpg",
+    "category": "Tablets",
+    "price": 400,
+    "description": "High-performance tablet for productivity.",
+    "specifications": [
+      "64GB Storage",
+      "4GB RAM",
+      "12-inch Display"
+    ],
+    "availability": true,
+    "rating": 4.5
+  }

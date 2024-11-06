@@ -1,0 +1,15 @@
+{
+    "product_id": 9,
+    "product_title": "iPad Pro",
+    "product_image": "https://i.ibb.co.com/KhVnb9D/i-Pad-Pro-M4.jpg",
+    "category": "Tablets",
+    "price": 300,
+    "description": "Lightweight tablet perfect for reading and browsing.",
+    "specifications": [
+      "32GB Storage",
+      "3GB RAM",
+      "10-inch Display"
+    ],
+    "availability": true,
+    "rating": 4.2
+  }
