@@ -61,8 +61,8 @@ const ProductDetails = () => {
     }
 
     return (
-        <div className="flex items-center rounded-3xl bg-white w-[60%] p-[2rem] gap-[2rem]">
-            <div className="w-[40%]"><img src={`${details.product_image}`} alt="img" className="w-full"/></div>
+        <div className="flex items-center rounded-3xl bg-white w-[60%] p-[3rem] gap-[2rem] border-2 border-primary mx-auto -translate-y-[40%]">
+            <div className="w-[35%]"><img src={`${details.product_image}`} alt="img" className="w-full"/></div>
             <div>
                 <h1 className="font-bold text-[1.5rem] mb-3">{details.product_title}</h1>
                 <p className="font-semibold text-gray-600 mb-4 text-lg">Price: ${details.price}</p>

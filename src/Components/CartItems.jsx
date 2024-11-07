@@ -29,7 +29,7 @@ const CartItems = ({ item }) => {
                 <p className="text-gray-500 mb-2">{description}</p>
                 <p className="font-semibold text-gray-600 mb-2">Price: {price}</p>
             </div>
-            <IoIosCloseCircleOutline onClick={handleCart} className={"text-4xl text-red-600 cursor-pointer"}></IoIosCloseCircleOutline>
+            <IoIosCloseCircleOutline onClick={handleCart} className={"text-4xl text-red-600 cursor-pointer mb-auto"}></IoIosCloseCircleOutline>
         </div>
     );
 };

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import CartContext from "../Contexts/CartContext";
 import CartItems from "./CartItems";
 import { FaFilter } from "react-icons/fa";
+import { TbMoodEmpty } from "react-icons/tb";
 
 const Cart = () => {
     const { cartItems, sortCart, isOpen, setIsOpen, clearCart } = useContext(CartContext)
@@ -32,11 +33,18 @@ const Cart = () => {
                     <button onClick={handePurchase} className="bg-gradient-to-b from-[#9232DF] to-[#DF60DF] text-white font-semibold py-2 px-6 rounded-[3rem]">Purchase</button>
                 </div>
             </div>
-            <div>
+            <div className="flex flex-col gap-6 my-10">
                 {cartItems.map((element, index) => (
                     <CartItems key={index} item={element}></CartItems>
                 ))}
             </div>
+            {
+                cartItems.length == 0 && 
+                <div className="text-center mt-[5rem] mb-[8rem]">
+                    <TbMoodEmpty className="mx-auto text-[6rem] font-extrabold text-red-600 mb-[2rem]"></TbMoodEmpty>
+                    <h1 className="text-[3rem] font-extrabold text-red-500">No products added here</h1>
+                </div>
+            }
         </div>
     );
 };

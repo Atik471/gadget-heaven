@@ -13,7 +13,7 @@ const Categories = () => {
     }, []);
 
     return (
-        <div className="flex flex-col p-6 gap-6 rounded-xl bg-white">
+        <div className="flex flex-col p-6 gap-6 rounded-xl bg-white border-2 border-gray-200">
             <NavLink to={"/"} className={"category"}>All Product</NavLink>
             {
                 categories?.map((cat) => (

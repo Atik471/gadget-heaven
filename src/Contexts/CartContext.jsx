@@ -33,7 +33,7 @@ export const CartProvider = ({ children }) => {
   };
 
   const sortCart = () => {
-    setCartItems([...cartItems].sort((a, b) => a.price - b.price));
+    setCartItems([...cartItems].sort((a, b) => b.price - a.price));
   } 
 
   let tPrice = 0

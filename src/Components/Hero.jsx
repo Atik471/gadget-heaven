@@ -20,10 +20,12 @@ const Hero = () => {
     if((location.pathname === '/' || isMatch) && location.pathname != '/dashboard' && location.pathname != '/statistics') 
     {
         heroContent = (
-            <div className="text-center">
+            <div className="text-center rounded-xl bg-primary pb-[10%]"
+            >
                 <h1 className="text-[3.5rem] leading-[4.5rem] font-extrabold mb-6 max-w-[80%] m-auto">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
                 <p className="max-w-[70%] m-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                 <Link to={'/dashboard/cart'}><button className="py-2 px-5 bg-white text-primary rounded-[2rem] font-semibold my-5">Shop Now</button></Link>
+                
             </div>
         )
     }
@@ -52,7 +54,7 @@ const Hero = () => {
     else if(isProductMatch) 
     {
         heroContent = (
-            <div className="text-center">
+            <div className="text-center mb-[15%]">
                 <h1 className="text-4xl font-bold mb-6">Product Details</h1>
                 <p className="max-w-[70%] m-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
             </div>
@@ -60,7 +62,7 @@ const Hero = () => {
     }
 
     return (
-        <div className="bg-primary w-full text-white flex justify-center items-center p-8">
+        <div className={`${((location.pathname === '/' || isMatch) && location.pathname != '/dashboard' && location.pathname != '/statistics') && "rounded-2xl"} bg-primary w-full text-white flex justify-center items-center p-8`}>
             {
                 heroContent
             }
