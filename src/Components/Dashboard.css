@@ -1,0 +1,11 @@
+a.active.dashboardBtn{
+    background-color: white;
+    color: #9538E2;
+}
+
+a.dashboardBtn{
+    border: 2px solid white;
+    padding: 8px 24px;
+    border-radius: 2rem;
+    font-weight: 600;
+}

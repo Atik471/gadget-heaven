@@ -13,7 +13,7 @@ const Navbar = () => {
                 <ul className="flex gap-8">
                     <NavLink to={"/"} className={"text-gray-500 font-semibold"}>Home</NavLink>
                     <NavLink to={"/statistics"} className={"text-gray-500 font-semibold"}>Statistics</NavLink>
-                    <NavLink to={"/dashboard"} className={"text-gray-500 font-semibold"}>Dashboard</NavLink>
+                    <NavLink to={"/dashboard/cart"} className={"text-gray-500 font-semibold"}>Dashboard</NavLink>
                 </ul>
                 <div className="flex gap-4">
                     <BsCart3 className="text-4xl p-2 border-2 rounded-full hover:border-slate-400 transition-all duration-300"></BsCart3>

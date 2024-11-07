@@ -11,7 +11,7 @@ const Product = ({ pr }) => {
                 <img src={`${product_image}`} alt="product_img" />
             </div>
             <p className="text-lg font-semibold mb-2">{product_title}</p> 
-            <p className="text-gray-600 mb-3">Price: {price}k</p> 
+            <p className="text-gray-600 mb-3">Price: {price}</p> 
             <Link to={`/productDetails/:${product_id}`}><button className="py-2 px-6 rounded-[3rem] border-2  border-[#9236CE] border-b-[#D958AD]">View Details</button></Link>
         </div>
     );

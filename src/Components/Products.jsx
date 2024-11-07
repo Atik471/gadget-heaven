@@ -14,18 +14,21 @@ const Products = () => {
         .catch((error) => console.error("Error fetching data:", error));
     }, [])
 
+    let count = 0
+
     return (
         <div className="grid grid-cols-3 gap-4">
             {
                 products?.map((p) => (
                     location.pathname === "/" ? 
                         p.products?.map((pr) => (
-                            <Product key={pr.product_id} pr={pr}/>
+                            9 > count++ && <Product key={pr.product_id} pr={pr}/>
+                            
                         ))
                         :
                         `/:${p.category_name}` === location.pathname &&
                         p.products?.map((pr) => (
-                            <Product key={pr.product_id} pr={pr}/>
+                            9 > count++ && <Product key={pr.product_id} pr={pr}/>
                         ))
                     )
                 )

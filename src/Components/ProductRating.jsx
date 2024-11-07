@@ -11,15 +11,16 @@ const ProductRating = ({ initialRating }) => {
 
     return (
         <div>
-            <p>Rating: {rating}</p>
+            <p className="font-semibold text-lg mt-3">Rating: <span className='text-sm p-1 rounded-md bg-gray-200'>{rating}</span></p>
             <ReactStars
                 count={5}               
                 onChange={ratingChanged}
                 size={24}                  
                 isHalf={true}              
                 value={rating}             
-                activeColor="#ffd700"      
+                activeColor="#ffd700"   
             />
+            
         </div>
     );
 };

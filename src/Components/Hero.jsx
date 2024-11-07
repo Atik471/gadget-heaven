@@ -1,4 +1,4 @@
-import { matchPath, NavLink, useLocation } from "react-router-dom";
+import { Link, matchPath, NavLink, useLocation } from "react-router-dom";
 
 const Hero = () => {
 
@@ -23,7 +23,7 @@ const Hero = () => {
             <div className="text-center">
                 <h1 className="text-[3.5rem] leading-[4.5rem] font-extrabold mb-6 max-w-[80%] m-auto">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
                 <p className="max-w-[70%] m-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
-                <button>Shop</button>
+                <Link to={'/dashboard/cart'}><button className="py-2 px-5 bg-white text-primary rounded-[2rem] font-semibold my-5">Shop Now</button></Link>
             </div>
         )
     }
@@ -33,9 +33,9 @@ const Hero = () => {
             <div className="text-center">
                 <h1 className="text-4xl font-bold mb-6">Dashboard</h1>
                 <p className="max-w-[70%] m-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
-                <div className="flex">
-                    <NavLink to={"/dashboard/cart"}>Cart</NavLink>
-                    <NavLink to={"/dashboard/wishlist"}>Wishlist</NavLink>
+                <div className="flex gap-4 justify-center my-6">
+                    <NavLink to={"/dashboard/cart"} className={"dashboardBtn"}>Cart</NavLink>
+                    <NavLink to={"/dashboard/wishlist"} className={"dashboardBtn"}>Wishlist</NavLink>
                 </div>
             </div>
         )

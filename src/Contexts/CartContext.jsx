@@ -30,8 +30,12 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  const sortCart = () => {
+    setCartItems([...cartItems].sort((a, b) => a.price - b.price));
+  } 
+
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, wishlistItems, addToWishlist }}>
+    <CartContext.Provider value={{ cartItems, addToCart, wishlistItems, addToWishlist, sortCart }}>
       {children}
     </CartContext.Provider>
   );
