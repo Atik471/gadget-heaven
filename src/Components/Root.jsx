@@ -12,8 +12,9 @@ const Root = () => {
 
     return (
         <div className="flex flex-col min-h-screen font-sora bg-root">
-            <Modal></Modal>
+            
             <CartProvider>
+                <Modal></Modal>
                 <ToastContainer />
                 <Header></Header>
                 {location.pathname === "/" ? <Home></Home> : <Outlet></Outlet> } 

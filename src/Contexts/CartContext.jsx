@@ -7,6 +7,8 @@ const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [wishlistItems, setWishlistItems] = useState([]);
+  const [isOpen, setIsOpen] = useState(false)
+  const [totalPrice, setTotalPrice] = useState(0)
 
   const addToCart = (item) => {
     setCartItems((prevItems) => {
@@ -34,8 +36,17 @@ export const CartProvider = ({ children }) => {
     setCartItems([...cartItems].sort((a, b) => a.price - b.price));
   } 
 
+  let tPrice = 0
+  const clearCart = () => {
+    cartItems.map((i) =>(
+        tPrice += i.price)
+    )
+    setTotalPrice(tPrice)
+    setCartItems([])
+  }
+
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, wishlistItems, addToWishlist, sortCart }}>
+    <CartContext.Provider value={{ cartItems, addToCart, wishlistItems, addToWishlist, sortCart, isOpen, setIsOpen, clearCart, totalPrice }}>
       {children}
     </CartContext.Provider>
   );
