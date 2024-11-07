@@ -30,7 +30,7 @@ const Cart = () => {
                     <button className="text-primary font-semibold py-2 px-6 rounded-[3rem] border-2  border-[#9236CE] border-b-[#D958AD] flex gap-3 items-center" onClick={handleSort} >
                     Sort by Price <FaFilter />
                     </button>
-                    <button onClick={handePurchase} className="bg-gradient-to-b from-[#9232DF] to-[#DF60DF] text-white font-semibold py-2 px-6 rounded-[3rem]">Purchase</button>
+                    <button onClick={handePurchase} className={`${totalPrice != 0 ? "bg-gradient-to-b from-[#9232DF] to-[#DF60DF] text-white" : "text-gray-700 border-2 border-gray-400 bg-gray-200"} font-semibold py-2 px-6 rounded-[3rem]`} disabled = {totalPrice == 0}>Purchase</button>
                 </div>
             </div>
             <div className="flex flex-col gap-6 my-10">

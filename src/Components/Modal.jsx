@@ -2,12 +2,15 @@
 import img from "../assets/Group.png"
 import { useContext } from "react";
 import CartContext from "../Contexts/CartContext";
+import { useNavigate } from "react-router-dom";
 
 const Modal = () => {
     const { isOpen, setIsOpen, totalPrice } = useContext(CartContext)
+    const navigate = useNavigate();
 
     const handeClose = () => {
         setIsOpen(!isOpen)
+        navigate('/')
     }
 
     return (
