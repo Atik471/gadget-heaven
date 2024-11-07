@@ -74,7 +74,7 @@ const ProductDetails = () => {
                         <li key={index} className="text-gray-500 mb-1">{index+1}. {element}</li>  
                     ))}
                 </ul>
-                <ProductRating initialRating={details.rating}></ProductRating>
+                <ProductRating rating={details.rating}></ProductRating>
                 <div className="flex gap-3 mt-4">
                     <button onClick={handleCart} className={`flex ${toCart ? "bg-gray-300" : "bg-primary"} py-2 px-5 rounded-[2rem] justify-center items-center gap-3 ${toCart ? "text-black" : "text-white"}`}>
                         <span>{`${toCart ? "Remove from cart" : "Add to cart"}`}</span>
