@@ -10,9 +10,6 @@ const Statistics = () => {
         fetch('/productDetails.json')
         .then(response => response.json())
         .then(data => setProductList(data))
-
-        
-        
     }, [])
 
     if (!productList) {
@@ -27,11 +24,9 @@ const Statistics = () => {
 
     productStats = productStats.flat()
 
-    console.log(productStats)
-
     return(
-        <div className='flex flex-col justify-center items-center my-[5rem]'>
-            <h2 className='font-semibold text-xl'>Product Price Line Chart</h2>
+        <div className='flex flex-col justify-center items-center my-[3rem] md:my-[5rem]'>
+            <h2 className='font-semibold text-xl mb-6'>Product Price Line Chart</h2>
             <ResponsiveContainer width="80%" height={400}>
                 <LineChart data={productStats}>
                     <CartesianGrid strokeDasharray="3 3" />
@@ -39,7 +34,7 @@ const Statistics = () => {
                     angle={-45}
                     textAnchor="end" 
                     interval={0} 
-                    height={180} />
+                    height={200} />
                     <YAxis />
                     <Tooltip 
                     content={({ payload }) => 

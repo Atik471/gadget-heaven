@@ -14,7 +14,7 @@ const Header = () => {
 
 
     return (
-        <div className={`${((location.pathname === '/' || isMatch) && location.pathname != '/dashboard' && location.pathname != '/contact-us' && location.pathname != '/statistics') && "w-[96%] mx-auto  my-[2rem] p-2 border-2 border-gray-200 rounded-2xl relative h-full mb-[20%]"}`}>
+        <div className={`${((location.pathname === '/' || isMatch) && location.pathname != '/dashboard' && location.pathname != '/contact-us' && location.pathname != '/statistics') && "w-[96%] mx-auto my-4 md:my-[2rem] p-2 border-2 border-gray-200 rounded-2xl relative h-full md:mb-[20%]"}`}>
             <div className={`${((location.pathname === '/' || isMatch) && location.pathname != '/dashboard' && location.pathname != '/contact-us' && location.pathname != '/statistics') && " bg-primary rounded-2xl h-full relative" }`}
             >
                 <Navbar></Navbar>

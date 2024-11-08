@@ -22,15 +22,21 @@ const Cart = () => {
 
 
     return (
-        <div className="m-auto w-[80%] my-[4rem]">
-            <div className="flex justify-between">
-                <h1 className="text-xl font-bold">Cart</h1>
-                <div className="flex gap-3 items-center">
-                    <h1 className="text-xl font-bold">Total Price: {totalPrice}</h1>
-                    <button className="text-primary font-semibold py-2 px-6 rounded-[3rem] border-2  border-[#9236CE] border-b-[#D958AD] flex gap-3 items-center" onClick={handleSort} >
-                    Sort by Price <FaFilter />
-                    </button>
-                    <button onClick={handePurchase} className={`${totalPrice != 0 ? "bg-gradient-to-b from-[#9232DF] to-[#DF60DF] text-white" : "text-gray-700 border-2 border-gray-400 bg-gray-200"} font-semibold py-2 px-6 rounded-[3rem]`} disabled = {totalPrice == 0}>Purchase</button>
+        <div className="m-auto w-[92%] md:w-[80%] my-[4rem]">
+            <div className="flex flex-col md:flex-row justify-between gap-3">
+                <div className="flex justify-between">
+                    <h1 className="text-lg md:text-xl font-bold">Cart</h1>
+                    <h1 className="md:hidden inline-block text-base md:text-xl font-bold">Total Price: {totalPrice}</h1>
+                </div>
+                
+                <div className="flex flex-col md:flex-row gap-3 items-start mr-auto md:mr-0">
+                    <h1 className="text-base md:text-xl font-bold md:inline-block hidden">Total Price: {totalPrice}</h1>
+                    <div className="flex gap-3">
+                        <button className="text-primary font-semibold text-sm md:text-base py-1 md:py-2 px-3 md:px-6 rounded-[3rem] border-2  border-[#9236CE] border-b-[#D958AD] flex gap-3 items-center" onClick={handleSort} >
+                        Sort by Price <FaFilter />
+                        </button>
+                        <button onClick={handePurchase} className={`${totalPrice != 0 ? "bg-gradient-to-b from-[#9232DF] to-[#DF60DF] text-white" : "text-gray-700 border-2 border-gray-400 bg-gray-200"} font-semibold text-sm md:text-base py-1 md:py-2 px-3 md:px-6 rounded-[3rem]`} disabled = {totalPrice == 0}>Purchase</button>
+                    </div>
                 </div>
             </div>
             <div className="flex flex-col gap-6 my-10">

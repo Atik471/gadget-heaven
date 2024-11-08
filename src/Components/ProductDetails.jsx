@@ -61,10 +61,11 @@ const ProductDetails = () => {
     }
 
     return (
-        <div className="flex items-center rounded-3xl bg-white w-[60%] p-[3rem] gap-[2rem] border-2 border-primary mx-auto -translate-y-[40%]">
-            <div className="w-[35%]"><img src={`${details.product_image}`} alt="img" className="w-full"/></div>
+        <div className="flex md:flex-row flex-col items-center rounded-3xl bg-white w-[80%] md:w-[60%] p-4 md:p-[3rem] gap-[2rem] border-2 border-primary mx-auto -translate-y-[20%]">
+            <div className="hidden md:flex w-full md:w-[35%]"><img src={`${details.product_image}`} alt="img" className="w-full"/></div>
             <div>
                 <h1 className="font-bold text-[1.5rem] mb-3">{details.product_title}</h1>
+                <div className="md:hidden w-full md:w-[35%]"><img src={`${details.product_image}`} alt="img" className="w-full"/></div>
                 <p className="font-semibold text-gray-600 mb-4 text-lg">Price: ${details.price}</p>
                 <p className="border-2 border-green-500 bg-green-100 text-green-500 py-2 px-5 rounded-[2rem] inline-block mb-4">{details.availability == true ? "In Stock" : "Out of Stock"}</p>
                 <p className="text-gray-500 mb-4">{details.description}</p>
@@ -76,9 +77,9 @@ const ProductDetails = () => {
                 </ul>
                 <ProductRating rating={details.rating}></ProductRating>
                 <div className="flex gap-3 mt-4">
-                    <button onClick={handleCart} className={`flex ${toCart ? "bg-gray-300" : "bg-primary"} py-2 px-5 rounded-[2rem] justify-center items-center gap-3 ${toCart ? "text-black" : "text-white"}`}>
+                    <button onClick={handleCart} className={`flex ${toCart ? "bg-gray-300" : "bg-primary"} py-1 md:py-2 px-3 md:px-5 text-sm md:text-base rounded-[2rem] font-semibold justify-center items-center gap-3 ${toCart ? "text-black" : "text-white"}`}>
                         <span>{`${toCart ? "Remove from cart" : "Add to cart"}`}</span>
-                        <BsCart3 className="text-xl"></BsCart3>
+                        <BsCart3 className="text-lg md:text-xl"></BsCart3>
                     </button>
                     <button onClick={handleWishlist}><BiHeart className={`text-[2.5rem] p-2 border-2 rounded-full ${toWishList ? "bg-primary" : "bg-transparent"} hover:border-slate-400 transition-all duration-300 relative ${toWishList ? "text-white" : "text-black"}`}></BiHeart></button>
                 </div>

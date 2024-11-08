@@ -8,7 +8,7 @@ const Wishlist = () => {
 
     return (
         <div className="w-[80%] m-auto my-[4rem]">
-            <h1 className="text-left text-xl font-bold mb-[2rem]">Wishlist</h1>
+            <h1 className="text-left text-lg md:text-xl font-bold mb-[1.3rem] md:mb-[2rem]">Wishlist</h1>
             <div className="flex flex-col gap-6 my-8">
                 {wishlistItems.map((element, index) => (
                     <WishlistItems key={index} item={element}>{element.product_title}</WishlistItems>  

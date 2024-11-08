@@ -4,12 +4,7 @@ import Message from "./Message";
 
 
 const Messages = () => {
-
     const retreivedData = JSON.parse(localStorage.getItem("formData"));
-
-    retreivedData != null && retreivedData.map((item) => (
-        console.log(item)
-                ))
 
     return (
         <div className="w-[80%] mx-auto mb-[4rem] p-8 rounded-2xl bg-gray-200">

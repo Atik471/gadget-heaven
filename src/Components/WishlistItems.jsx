@@ -43,17 +43,18 @@ const WishlistItems = ({ item }) => {
     }
 
     return (
-        <div className="flex w-full bg-white rounded-xl mx-auto items-center p-4 gap-6">
-            <div className="w-[20%]">
-                <img src={`${product_image}`} alt="" className="rounded-md"/>
+        <div className="flex flex-col md:flex-row w-[100%] md:w-full bg-white rounded-xl mx-auto items-center p-4 gap-3 md:gap-6">
+            <div className="w-full md:w-[20%] flex justify-between">
+                <img src={`${product_image}`} alt="" className="rounded-md w-[74%]"/>
+                <IoIosCloseCircleOutline className={"md:hidden text-4xl text-red-600 cursor-pointer mb-auto mt-1 mr-1"} onClick={handleWishlist}></IoIosCloseCircleOutline>
             </div>
             <div className="flex-grow">
                 <h1 className="font-bold text-[1.2rem] mb-2">{product_title}</h1>
                 <p className="text-gray-500 mb-2">{description}</p>
                 <p className="font-semibold text-gray-600 mb-2">Price: {price}</p>
-                <button onClick={handleCart} className={`flex ${toCart ? "bg-gray-300 text-black" : "bg-primary text-white"} py-2 px-6 rounded-[2rem] border-2 border-primary font-semibold`}>{toCart ? "Remove from cart" : "Add to cart"}</button>
+                <button onClick={handleCart} className={`flex ${toCart ? "bg-gray-300 text-black" : "bg-primary text-white"} py-1 md:py-2 px-3 md:px-6 text-sm md:text-base rounded-[2rem] border-2 border-primary font-semibold`}>{toCart ? "Remove from cart" : "Add to cart"}</button>
             </div>
-            <IoIosCloseCircleOutline className={"text-4xl text-red-600 cursor-pointer mb-auto mt-6 mr-6"} onClick={handleWishlist}></IoIosCloseCircleOutline>
+            <IoIosCloseCircleOutline className={"md:flex hidden text-4xl text-red-600 cursor-pointer mb-auto mt-6 mr-6"} onClick={handleWishlist}></IoIosCloseCircleOutline>
         </div>
     );
 };

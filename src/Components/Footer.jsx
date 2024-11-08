@@ -6,7 +6,7 @@ const Footer = () => {
             <h1 className="font-bold text-2xl mb-4">Gadget Heaven</h1>
             <p className="text-gray-500">Leading the way in cutting-edge technology and innovation.</p>
 
-            <hr className=" border-gray-300 my-8 w-[70%]" />
+            <hr className=" border-gray-300 my-4 md:my-8 w-[90%] md:w-[70%]" />
 
             <div className="flex md:flex-row flex-col justify-between w-[60%] ">
                 <div className="text-center mb-6">

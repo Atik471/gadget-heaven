@@ -6,8 +6,6 @@ export const SubmitContext = createContext()
 
 const Contact = () => {
     const [submit, setSubmit] = useState(1)
-
-    
     const submitValue = {submit, setSubmit}
 
     return (

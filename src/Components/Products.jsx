@@ -18,7 +18,7 @@ const Products = () => {
     let count = 0
 
     return (
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-4 border-2 border-primary/10 rounded-xl p-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 border-2 border-primary/10 rounded-xl p-4">
             {
                 products?.map((p) => (
                     location.pathname === "/" ? 
