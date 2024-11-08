@@ -40,7 +40,7 @@ const ProductDetails = () => {
         setToCart(!toCart)
         toast.success(`${iscart ? "Added to cart" : "Removed from cart"}`, {
             position: "top-right",  
-            autoClose: 3000,        
+            autoClose: 1000,        
             closeOnClick: true,     
             pauseOnHover: true, 
             draggable: true,
@@ -53,7 +53,7 @@ const ProductDetails = () => {
         setToWishList(!toWishList)
         toast.success(`${iswishlist ? "Added to wishlist" : "Removed from wishlist"}`, {
             position: "top-right",  
-            autoClose: 3000,        
+            autoClose: 1000,        
             closeOnClick: true,     
             pauseOnHover: true, 
             draggable: true,

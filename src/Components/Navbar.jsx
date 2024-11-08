@@ -1,12 +1,14 @@
 import { matchPath, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { BiHeart } from "react-icons/bi";
 import { BsCart3 } from "react-icons/bs";
+import { BiMenu } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import "./Navbar.css"
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import CartContext from "../Contexts/CartContext";
 
 const Navbar = () => {
+    const [mobileMenu, setMobileMenu] = useState(false)
     const location = useLocation()
     const navigate = useNavigate()
     const { cartItems, wishlistItems } = useContext(CartContext)
@@ -22,13 +24,16 @@ const Navbar = () => {
     const handleWishlist = () => {
       navigate('/dashboard/wishlist')
     }
+    const handleMobileMenu = () => {
+      setMobileMenu(!mobileMenu)
+    } 
 
     return (
         <div>
             <div className={`${((location.pathname === '/' || isMatch) && location.pathname != '/dashboard' && location.pathname != '/contact-us'  && location.pathname != '/statistics') ? "max-w-[84%]" : "max-w-[90%]"} flex justify-between items-center py-6 mx-auto`}>
                 <Link to={"/"}><h1 className={`${((location.pathname === '/' || isMatch) && location.pathname != '/contact-us'  && location.pathname != '/dashboard' && location.pathname != '/statistics') && "text-white"} font-bold text-2xl`}>Gadget Heaven</h1></Link>
                 
-                <ul className="flex gap-8 items-center">
+                <ul className="hidden md:flex gap-8 items-center">
                     <NavLink to={"/"} className={`${(location.pathname === '/' || isMatch) && location.pathname != '/contact-us'  && location.pathname !== '/dashboard' && location.pathname !== '/statistics' && 'bg-white px-2 py-1 rounded-md'} text-gray-500 font-semibold`}
                     style={{
                         color: (location.pathname === '/' || isMatch) && location.pathname != '/contact-us'  && location.pathname !== '/dashboard' && location.pathname !== '/statistics' ? '#9538E2' : ''
@@ -46,6 +51,7 @@ const Navbar = () => {
                         color: (location.pathname === '/' || isMatch) && location.pathname != '/contact-us'  && location.pathname !== '/dashboard' && location.pathname !== '/statistics' ? 'white' : ''
                       }}>Contact Us</NavLink>
                 </ul>
+
                 <div className="flex gap-4">
                   <div className="relative">
                       <BsCart3 onClick={handleCart} className="cursor-pointer text-4xl p-2 border-2 rounded-full hover:border-slate-400 transition-all duration-300" style={{
@@ -66,6 +72,24 @@ const Navbar = () => {
                       }}>{wishlistItems.length}</span>
                     </div>
                 </div>
+
+                <div className="relative">
+                  <BiMenu onClick={handleMobileMenu} className="text-primary font-bold inline-block text-3xl"
+                  style={{
+                    color: (location.pathname === '/' || isMatch) && location.pathname != '/contact-us'  && location.pathname !== '/dashboard' && location.pathname !== '/statistics' ? 'white' : ''
+                  }}></BiMenu>
+                  <ul className={`mobilemenu ${mobileMenu ? "flex" : "hidden"} flex-col gap-8 items-center absolute right-4 bg-slate-800 w-[80vw] p-4 rounded-lg`}>
+                    <NavLink to={"/"} className={`${(location.pathname === '/' || isMatch) && location.pathname != '/contact-us'  && location.pathname !== '/dashboard' && location.pathname !== '/statistics' && 'bg-white px-2 py-1 rounded-md'} text-gray-500 font-semibold`}
+                   >Home</NavLink>
+                    <NavLink to={"/statistics"} className={"text-gray-500 font-semibold"}
+                   >Statistics</NavLink>
+                    <NavLink to={"/dashboard/cart"} className={"text-gray-500 font-semibold"}
+                    >Dashboard</NavLink>
+                    <NavLink to={"/contact-us"} className={"text-gray-500 font-semibold"}
+                   >Contact Us</NavLink>
+                  </ul>
+                </div>
+                
             </div>
         </div>
     );

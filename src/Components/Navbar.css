@@ -2,3 +2,15 @@ a.active{
     color: #9538E2;
     transition: all;
 }
+
+.mobilemenu a.active{
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    color: #9538E2;
+}
+
+.mobilemenu a{
+    color: white;
+    padding: 4px 8px;
+}

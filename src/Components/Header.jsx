@@ -21,7 +21,7 @@ const Header = () => {
                 <Hero></Hero>
                 
                 {((location.pathname === '/' || isMatch) && location.pathname != '/dashboard' && location.pathname != '/contact-us' && location.   pathname != '/statistics') && 
-                    <div className="w-[50%] p-3 border-2 border-white rounded-xl bg-white/15 bottom-0 translate-x-[50%]       translate-y-[70%] absolute">
+                    <div className="hidden md:flex w-[50%] p-3 border-2 border-white rounded-xl bg-white/15 bottom-0 translate-x-[50%]       translate-y-[70%] absolute">
                         <img src={banner} alt="banner-img" className="rounded-xl"/>
                     </div>
                 }                
