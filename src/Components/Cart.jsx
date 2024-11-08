@@ -29,7 +29,7 @@ const Cart = () => {
                     <h1 className="md:hidden inline-block text-base md:text-xl font-bold">Total Price: {totalPrice}</h1>
                 </div>
                 
-                <div className="flex flex-col md:flex-row gap-3 items-start mr-auto md:mr-0">
+                <div className="flex flex-col md:flex-row gap-3 items-center mr-auto md:mr-0">
                     <h1 className="text-base md:text-xl font-bold md:inline-block hidden">Total Price: {totalPrice}</h1>
                     <div className="flex gap-3">
                         <button className="text-primary font-semibold text-sm md:text-base py-1 md:py-2 px-3 md:px-6 rounded-[3rem] border-2  border-[#9236CE] border-b-[#D958AD] flex gap-3 items-center" onClick={handleSort} >

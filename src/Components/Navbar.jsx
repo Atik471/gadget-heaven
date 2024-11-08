@@ -87,7 +87,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className="relative" ref={menuRef}>
+                <div className="relative md:hidden" ref={menuRef}>
                   <BiMenu onClick={handleMobileMenu} className="text-primary font-bold inline-block text-3xl"
                   style={{
                     color: (location.pathname === '/' || isMatch) && location.pathname != '/contact-us'  && location.pathname !== '/dashboard' && location.pathname !== '/statistics' ? 'white' : ''
