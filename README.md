@@ -2,7 +2,7 @@
 
 A responsive, feature-rich single page e-commerce application (SPA) built with React, Vite, and Tailwind CSS. The project includes features for adding products to cart and wishlist, sorting by price, product categorization, and contact form submission.
 
-- **Live Website**: [Visit the Site on Surge](#)
+- **Live Website**: [Visit the Site on Surge](https://gadget-heaven-atik.surge.sh/)
 - **Requirement Document**: [Requirement Document Link](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf)
 
 ---
