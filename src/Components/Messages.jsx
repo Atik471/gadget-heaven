@@ -12,7 +12,7 @@ const Messages = () => {
                 ))
 
     return (
-        <div className="w-[80%] mx-auto p-8 rounded-2xl bg-gray-200">
+        <div className="w-[80%] mx-auto mb-[4rem] p-8 rounded-2xl bg-gray-200">
             <h1 className="text-3xl font-bold mb-[3rem]">Messages</h1>
             {
                 retreivedData != null ? retreivedData.map((item, index) => (

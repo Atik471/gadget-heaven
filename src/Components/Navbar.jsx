@@ -1,4 +1,4 @@
-import { matchPath, NavLink, useLocation } from "react-router-dom";
+import { matchPath, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { BiHeart } from "react-icons/bi";
 import { BsCart3 } from "react-icons/bs";
 import { Link } from "react-router-dom";
@@ -8,12 +8,20 @@ import CartContext from "../Contexts/CartContext";
 
 const Navbar = () => {
     const location = useLocation()
+    const navigate = useNavigate()
     const { cartItems, wishlistItems } = useContext(CartContext)
     const isMatch = matchPath(
         
         { path: '/:props' },
         location.pathname
     );
+
+    const handleCart = () => {
+      navigate('/dashboard/cart')
+    }
+    const handleWishlist = () => {
+      navigate('/dashboard/wishlist')
+    }
 
     return (
         <div>
@@ -40,7 +48,7 @@ const Navbar = () => {
                 </ul>
                 <div className="flex gap-4">
                   <div className="relative">
-                      <BsCart3 className="text-4xl p-2 border-2 rounded-full hover:border-slate-400 transition-all duration-300" style={{
+                      <BsCart3 onClick={handleCart} className="cursor-pointer text-4xl p-2 border-2 rounded-full hover:border-slate-400 transition-all duration-300" style={{
                         backgroundColor: (location.pathname === '/' || isMatch) && location.pathname != '/contact-us'  && location.pathname !== '/dashboard' && location.pathname !== '/statistics' ? 'white' : ''
                       }}></BsCart3>
                       <span className="absolute -top-2 -right-1 text-[11px] bg-primary border-[1px] w-4 text-center text-white rounded-full" style={{
@@ -49,7 +57,7 @@ const Navbar = () => {
                   </div>
                     
                     <div className="relative">
-                        <BiHeart className="text-4xl p-2 border-2 rounded-full hover:border-slate-400 transition-all duration-300 relative"
+                        <BiHeart onClick={handleWishlist} className=" cursor-pointer text-4xl p-2 border-2 rounded-full hover:border-slate-400 transition-all duration-300 relative"
                         style={{
                             backgroundColor: (location.pathname === '/' || isMatch) && location.pathname != '/contact-us'  && location.pathname !== '/dashboard' && location.pathname !== '/statistics' ? 'white' : ''
                           }}></BiHeart>
