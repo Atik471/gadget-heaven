@@ -10,6 +10,7 @@ import Home from './Components/Home';
 import ProductDetails from './Components/ProductDetails';
 import Cart from './Components/Cart';
 import Wishlist from './Components/Wishlist';
+import Contact from './Components/Contact';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
             element: <Wishlist></Wishlist>,
           }
         ]
+      },
+      {
+        path: "/contact-us",
+        element: <Contact></Contact>
       },
       {
         path: "/productDetails/:id",

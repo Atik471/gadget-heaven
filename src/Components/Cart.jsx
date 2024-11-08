@@ -40,7 +40,7 @@ const Cart = () => {
             </div>
             {
                 cartItems.length == 0 && 
-                <div className="text-center mt-[5rem] mb-[8rem]">
+                <div className="text-center mt-[3rem] mb-[8rem]">
                     <TbMoodEmpty className="mx-auto text-[6rem] font-extrabold text-red-600 mb-[2rem]"></TbMoodEmpty>
                     <h1 className="text-[3rem] font-extrabold text-red-500">No products added here</h1>
                 </div>

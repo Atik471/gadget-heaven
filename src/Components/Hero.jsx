@@ -17,7 +17,7 @@ const Hero = () => {
         location.pathname
     );
 
-    if((location.pathname === '/' || isMatch) && location.pathname != '/dashboard' && location.pathname != '/statistics') 
+    if((location.pathname === '/' || isMatch) && location.pathname != '/dashboard' && location.pathname != '/contact-us' && location.pathname != '/statistics') 
     {
         heroContent = (
             <div className="text-center rounded-xl bg-primary pb-[10%]"
@@ -60,9 +60,18 @@ const Hero = () => {
             </div>
         )
     }
+    else if(location.pathname === '/contact-us')
+    {
+        heroContent = (
+            <div className="text-center">
+                <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
+                <p className="max-w-[70%] m-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+            </div>
+        )
+    }
 
     return (
-        <div className={`${((location.pathname === '/' || isMatch) && location.pathname != '/dashboard' && location.pathname != '/statistics') && "rounded-2xl"} bg-primary w-full text-white flex justify-center items-center p-8`}>
+        <div className={`${((location.pathname === '/' || isMatch) && location.pathname != '/contact-us' && location.pathname != '/dashboard' && location.pathname != '/dashboard' && location.pathname != '/statistics') && "rounded-2xl"} bg-primary w-full text-white flex justify-center items-center p-8`}>
             {
                 heroContent
             }

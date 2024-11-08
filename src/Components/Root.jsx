@@ -29,6 +29,9 @@ const Root = () => {
           case '/statistics':
             document.title = 'Statistics | Gadget Heaven';
             break;
+          case '/contact-us':
+            document.title = 'Contact | Gadget Heaven';
+            break;
           case `/productDetails/${param.id}`:
                 document.title = 'Details | Gadget Heaven';
                 break;
